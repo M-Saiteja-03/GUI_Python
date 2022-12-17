@@ -1,0 +1,12 @@
+from tkinter import *
+root=Tk()
+root.geometry('150x100')
+v=IntVar()
+v.set(-1)
+r1=Radiobutton(root,text='C',variable=v,value=0)
+r1.pack(anchor='nw')
+r2=Radiobutton(root,text='Python',variable=v,value=1)
+r2.pack(anchor='nw')
+print(v.get())
+print(v.get())
+root.mainloop()
